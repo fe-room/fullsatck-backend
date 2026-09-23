@@ -1029,8 +1029,7 @@ Route：
 ```python
 async def create_product(
     db: AsyncSession = Depends(get_db),
-):
-    ...
+): ...
 ```
 
 生命周期：

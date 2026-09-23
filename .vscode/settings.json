@@ -1,0 +1,17 @@
+{
+  // 保存时自动格式化
+  "editor.formatOnSave": true,
+  // Python 使用 Ruff 作为默认格式化器
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports.ruff": "explicit",
+      "source.fixAll.ruff": "explicit"
+    }
+  },
+  // 让 Ruff 使用项目虚拟环境中的版本
+  "ruff.importStrategy": "fromEnvironment",
+  // 指向项目虚拟环境解释器
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
+}
